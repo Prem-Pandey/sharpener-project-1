@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: dimgray;
+    }
+    /* img{
+            width: 50px;
+        } */
+
+        #logo{
+    display: flex;
+    width: 76px;
+    height: 61px;
+}
+
+/* body{background-color: black;} */
+
+/* navigation bar styling */
+nav{
+    display: flex;
+align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: .5
+   
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    /* width: 100%; */
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 21px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 14px;
+}
+
+</style>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="pngwing.com.png" alt="">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">services</a></li>
+            <li class="item"><a href="#client-section">Clients</a></li>
+            <li class="item"><a href="/contact">Contact Us</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

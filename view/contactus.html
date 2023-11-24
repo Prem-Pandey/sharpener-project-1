@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body
+        {
+            background-image: url("/business-5475659.jpg");
+        }
+        #logo{
+    display: flex;
+    width: 76px;
+    height: 61px;
+}
+
+/* body{background-color: black;} */
+
+/* navigation bar styling */
+nav{
+    display: flex;
+align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    z-index: -1;
+    opacity: .5
+   
+}
+#navbar{
+    position: sticky;
+    top: 0px;
+    /* width: 100%; */
+}
+#navbar ul{
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.1rem;
+}
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 0px 21px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 14px;
+}
+
+        .heading{
+            margin-bottom: 10px;
+        }
+        .container{
+            background-color: rgb(131, 98, 98);
+           display: flexbox;
+           /* text-align: center; */
+           justify-content: center;
+            border: 2px solid black;
+            border-radius: 10px;
+           position: block;
+           margin-left: 30%;
+           margin-right: 30%;
+           /* margin-top: -80px; */
+           
+        }
+       .heading{
+        text-align: center;
+       }
+        p{
+            margin: 4px;
+            position: relative;
+          
+        }
+        .inputs{
+            border: 1px solid  black;
+            border-radius: 2px;
+            width: 95%;
+        }
+        .span>input{
+           
+            width: 46%;
+        }
+        .button{
+            width: 95%;
+        }
+        .info{
+            position: relative;
+        }
+        /* .nav{
+            margin-left: 90%;
+          margin-top: -10px;
+           
+            
+        } */
+        /* img{
+            width: 50px;
+        } */
+        .home{
+            border: 2px solid black;
+            margin-right: 15px;
+        }
+        .about{
+            border: 2px solid black;
+            
+            
+        }
+    </style>
+
+<body>
+    
+    <script src="script.js"></script>
+    <nav id="navbar">
+        <!-- <div id="logo">
+            <img src="pngwing.com.png" alt="">
+        </div> -->
+        <ul>
+            <li class="item"><a href="/home">Home</a></li>
+            <li class="item"><a href="#">Courses</a></li>
+            <li class="item"><a href="#">Hire With Us</a></li>
+            <li class="item"><a href="/contact">Conta Us</a></li>
+        </ul>
+    </nav>
+     
+    
+    <form action="/submit">
+        <div class="container">
+            <div class="heading">
+                <h1>book a call</h1>
+                <p>you can contact us</p>
+                <hr>
+            </div>
+            <div >
+                <p>name</p>
+                <input type="text" class="inputs" >
+            </div>
+    
+            <div >
+                <p>email</p>
+                <input type="email" class="inputs">
+            </div>
+    
+            <div >
+                <p>phone</p>
+                <input type="text" class="inputs">
+            </div>
+            
+            <div class="span">
+                <p>time for call:</p>
+                
+                <input type="date" name="" id="">
+                <input type="number" name="" id="">
+                
+            </div>
+           <button class="button" id="btn">call now</button>
+           <!-- <button type="submit" onsubmit="submit.js"></button> -->
+           <!-- <input type="submit" value="submit"> -->
+            
+           
+        </div>   
+
+    </div>
+</form>
+        
+   
+
+   
+</body>
+</html>
+
