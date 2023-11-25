@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
+const errorController = require('./controllers/error');
 const app = express();
 
 const adminRoutes = require('./routes/home');
@@ -13,8 +14,6 @@ app.use('/home', adminRoutes);
 app.use('/contact', contactRoutes);
 app.use('/submit', submit);
 
-app.use((req, res, next)=>{
-    res.status(404).send('<h1>page not found</h1>');
-})
+app.use(errorController.get404)
 
 app.listen(3000);
